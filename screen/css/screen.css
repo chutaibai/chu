@@ -1,0 +1,96 @@
+/* 公共元素 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+em {
+    font-style: normal;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 18px;
+    color: #cccccc;
+    padding: 0;
+    line-height: 1.9;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    height: 1100px;
+}
+/* 公共元素 */
+
+/* 筛选项 */
+.screenhead {
+    height: 50px;
+    line-height: 32px;
+}
+
+.screenhead .screenhead-title {
+    float: left;
+    margin-top: 10px;
+}
+
+.screenhead .screenhead-content {
+    float: left;
+}
+
+.screenhead .screenhead-content .screenhead-list {
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #333333;
+    font-size: 16px;
+}
+
+.screenhead .screenhead-content .active {
+    color: #66ccff;
+}
+/* 筛选项 */
+
+/* 筛选物品 */
+.screen-bottom {
+    margin-top: 50px;
+}
+
+.panel-body {
+    height: 20px;
+}
+
+.panel-body ol {
+    float: left;
+}
+
+.panel-body ol li {
+    float: left;
+    font-size: 16px;
+    padding-right: 40px;
+}
+/* 筛选物品 */
+
+/* 已选项 */
+.screening-items .screenhead-content .screenhead-list{
+    background-color: #66ccff;
+    color: #ffffff;
+    position: relative;
+    cursor: auto;
+    width: 71px;
+    text-align: center;
+}
+.screening-items .screenhead-content .screenhead-list .del{
+    position: absolute;
+    left: 66px;
+    top: -16px;
+    color: #ee0000;
+    cursor: pointer;
+}
+/* 已选项 */
