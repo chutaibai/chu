@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="css/H-ui.css">
+    <link rel="stylesheet" href="css/layer.css">
+    <style>
+        .input-text[type="number"] {
+            width: 130px;
+            margin-right: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table table-border table-bordered table-striped">
+        <thead>
+            <tr class="text-c">
+                <th>商品名称</th>
+                <th width="30%">商品简介</th>
+                <th>商品数量</th>
+                <th>商品单价(单位为元)</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    <a href="carlist.html"><span style="display: block;margin-top: 20px"
+        class="btn btn-secondary radius">购物车列表</span></a>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/layer.js"></script>
+    <script src="js/upload.js"></script>
+    <script src="js/shoplist.js"></script>
+</body>
+
+</html>

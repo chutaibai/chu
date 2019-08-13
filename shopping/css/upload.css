@@ -1,0 +1,17 @@
+body {
+    height: 1000px;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.container .submit {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container .submit .btn-primary {
+    width: 200px;
+}

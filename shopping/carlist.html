@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车列表</title>
+    <link rel="stylesheet" href="css/H-ui.css">
+    <style>
+        p {
+            margin: 0;
+        }
+
+        .btn-group {
+            font-size: 12px;
+        }
+        .panel{
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table table-border table-bordered table-striped">
+        <thead>
+            <tr class="text-c">
+                <th><input type="checkbox" class="all">商品名称</th>
+                <th width="30%">商品简介</th>
+                <th>商品数量</th>
+                <td>增加数量</td>
+                <th>商品单价(单位为元)</th>
+                <th>小计</th>
+            </tr>
+        </thead>
+        <tbody id="tbody2"></tbody>
+    </table>
+    <div class="panel panel-danger">
+        <div class="panel-header">总价:<p class="hthree">0</p><span>元</span></div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/layer.js"></script>
+    <script src="js/carlist.js"></script>
+</body>
+
+</html>
