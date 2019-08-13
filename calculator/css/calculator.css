@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container {
+    width: 336px;
+    height: 450px;
+    background-color: rgb(185, 185, 185);
+    margin: 0 auto;
+}
+
+.blank {
+    width: 336px;
+    height: 35px;
+    background-color: rgb(185, 185, 185);
+}
+
+.screen {
+    padding-top: 10px;
+    width: 336px;
+    height: 100px;
+    background-color: #ffffff;
+}
+
+.table {
+    margin-top: 70px;
+}
+
+.table thead tr th,
+.table tbody tr td {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+.table thead tr{
+    margin-bottom: 10px;
+}
