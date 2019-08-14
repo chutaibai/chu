@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>购物车列表</title>
     <link rel="stylesheet" href="css/H-ui.css">
+    <link rel="stylesheet" href="css/layer.css">
     <style>
         p {
             margin: 0;
@@ -15,7 +16,8 @@
         .btn-group {
             font-size: 12px;
         }
-        .panel{
+
+        .panel {
             text-align: right;
         }
     </style>
@@ -30,13 +32,16 @@
                 <th>商品数量</th>
                 <td>增加数量</td>
                 <th>商品单价(单位为元)</th>
-                <th>小计</th>
+                <th>小计(单位为元)</th>
             </tr>
         </thead>
         <tbody id="tbody2"></tbody>
     </table>
     <div class="panel panel-danger">
         <div class="panel-header">总价:<p class="hthree">0</p><span>元</span></div>
+    </div>
+    <div class="btn-group submit buy" style="float: right">
+        <span class="btn btn-primary radius">结算</span>
     </div>
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/layer.js"></script>

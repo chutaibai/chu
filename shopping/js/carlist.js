@@ -44,7 +44,7 @@ for (var i = 0; i < carlist.length; i++) {
         $(".count")[this.index].innerHTML = carlist[this.index].count;
         $(".pricesum")[this.index].innerHTML = psum;
         if ($(".one")[this.index].checked == true) {
-            $(".hthree")[0].innerHTML = parseFloat($(".hthree")[0].innerHTML) + parseFloat(carlist[this.index].sum);
+            $(".hthree")[0].innerHTML = parseFloat($(".hthree")[0].innerHTML) + parseFloat(carlist[this.index].price);
         }
     }
     check[i].onclick = function () {
@@ -54,12 +54,36 @@ for (var i = 0; i < carlist.length; i++) {
             $(".hthree")[0].innerHTML = sum1;
         } else {
             $(".hthree")[0].innerHTML = sum2;
-            $(".all")[0].checked = false;
         }
-        for (var i = 0; i < len; i++) {
-            if ($(".one")[this.index].checked == true) {
-                $(".all")[0].checked = true;
-            }
+        var checklen = $(".one").length;
+        var checkedlen = $(".one:checked").length;
+        if (checklen == checkedlen) {
+            $(".all").prop("checked", true);
+        } else {
+            $(".all").prop("checked", false);
         }
     }
 }
+
+$(".buy").click(function () {
+    layer.msg('是否要购买商品', {
+        time: 0,
+        btn: ['是', '否'],
+        yes: function (index) {
+            for (var i = 0; i < carlist.length; i++) {
+                if ($(".all")[i].checked == true) {
+                    var buycar = JSON.parse(localStorage.getItem("carlist"));
+                    buycar.length = 0;
+                    console.log(JSON.stringify(buycar))
+                    localStorage.setItem("carlist", JSON.stringify(buycar));
+                    history.go(0)
+                } else {
+                    layer.msg('请勾选玩商品')
+                }
+            }
+        },
+        btn2: function () {
+            layer.msg('您取消了');
+        }
+    });
+})

@@ -27,7 +27,7 @@ for (var i = 0; i < shoplist.length; i++) {
         if ($(".shopnum")[this.index].value == "" || $(".shopnum")[this.index].value < 0) {
             layer.msg('商品数量不能为空或者为负数');
         } else {
-            if (shoplist[this.index].count - $(".shopnum")[this.index].value > 0) {
+            if (shoplist[this.index].count - $(".shopnum")[this.index].value >= 0) {
                 shoplist[this.index].count = shoplist[this.index].count - $(".shopnum")[this.index].value
                 localStorage.setItem("shopList", JSON.stringify(shoplist));
                 var car = {
