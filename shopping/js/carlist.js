@@ -1,4 +1,4 @@
-var carlist = JSON.parse(localStorage.getItem("carlist"));
+﻿var carlist = JSON.parse(localStorage.getItem("carlist"));
 var html = "";
 for (var i = 0; i < carlist.length; i++) {
     html += `
@@ -78,7 +78,7 @@ $(".buy").click(function () {
                     localStorage.setItem("carlist", JSON.stringify(buycar));
                     history.go(0)
                 } else {
-                    layer.msg('请勾选玩商品')
+                    layer.msg('请勾选完商品')
                 }
             }
         },
