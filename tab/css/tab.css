@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+}
+
+header .active {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+footer {
+    width: 960px;
+    margin: 0 auto;
+}
+
+footer .tab {
+    display: none;
+}
+
+footer .act {
+    display: block;
+}
+
+.tab ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+.tab a {
+    font-weight: bold;
+}
+
+.tab .TianYi a {
+    color: #66CCFF;
+}
+
+.tab .Ling a {
+    color: #EE0000;
+}
+
+.tab .LongYa a {
+    color: #006666;
+}
+
+.tab .MoKe a {
+    color: #0080FF;
+}
+
+.tab .QingXian a {
+    color: #FFFF00;
+}
+
+.tab .MEIKO a {
+    color: #D80000;
+}
+
+.tab .KAITO a {
+    color: #0000FF;
+}
+
+.tab .Miku a {
+    color: #39C5BB;
+}
+
+.tab .Rin·Len a {
+    background-image:-webkit-linear-gradient(left, #FFA500, #FFE211); 
+    -webkit-background-clip:text; 
+    -webkit-text-fill-color:transparent;
+    background-image:-o-linear-gradient(left, #FFA500, #FFE211); 
+    -o-background-clip:text; 
+    -o-text-fill-color:transparent;
+    background-image:-moz-linear-gradient(left, #FFA500, #FFE211); 
+    -moz-background-clip:text; 
+    -moz-text-fill-color:transparent;
+    background-image:linear-gradient(left, #FFA500, #FFE211); 
+    background-clip:text; 
+}
+
+.tab .Luka a {
+    color: #FAAFBE;
+}
+
+.tab .Stardust a {
+    color: #9999FF;
+}
+
+.tab .Poetrybank a {
+    color: #F6BE71;
+}
+
+.tab .Redfeather a {
+    color: #FF4004;
+}
+
+.tab .Thefirmament a {
+    color: #8BC0B5;
+}
+
+.tab .Hay a {
+    color: #3399FF;
+}
