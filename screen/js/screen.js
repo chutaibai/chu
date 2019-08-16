@@ -1,3 +1,4 @@
+//渲染头部
 var html = "";
 for (var i = 0; i < screentopdata.length; i++) {
     html += `
@@ -13,6 +14,7 @@ for (var i = 0; i < screentopdata.length; i++) {
     $(".screen-top")[0].innerHTML = html;
 };
 
+//渲染筛选条件
 var coverHTML = function (screenbottomdata) {
     var html2 = ""
     for (var i = 0; i < screenbottomdata.length; i++) {
@@ -34,12 +36,15 @@ var coverHTML = function (screenbottomdata) {
 };
 coverHTML(screenbottomdata);
 
+//设置筛选条件对象
 var filterdata = [{
     type: "",
     trademarks: "",
     area: ""
 }];
 //key值为filterdata的关键值
+
+//筛选点击事件
 $(".type .screenhead-list").click(function () {
     $(this).addClass("active").siblings().removeClass("active");
     if (filterdata[0].type = " ") {
@@ -64,6 +69,7 @@ $(".area .screenhead-list").click(function () {
     filterscreen()
 })
 
+//筛选函数
 var filterscreen = function () {
     selected();
     var filterKey = [];
@@ -87,6 +93,7 @@ var filterscreen = function () {
     }
 }
 
+//已选筛选条件函数
 var selected = function () {
     console.log(filterdata[0])
     var html3 = "";
@@ -108,6 +115,8 @@ var selected = function () {
         $(`.${screenkey} .screenhead-list.active`).removeClass("active");
     })
 }
+
+//排序函数
 var price=true;
 $(".pricesort").click(function(){
     price=!price;
