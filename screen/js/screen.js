@@ -18,10 +18,9 @@ var coverHTML = function (screenbottomdata) {
     for (var i = 0; i < screenbottomdata.length; i++) {
         html2 += `
             <div class="panel panel-primary ">
-              <div class="panel-header">商铺</div>
+              <div class="panel-header">${screenbottomdata[i].name}</div>
               <div class="panel-body">
                 <ol>
-                  <li><span>商铺名字:</span>${screenbottomdata[i].name}</li>
                   <li><span>商铺类型:</span>${screenbottomdata[i].type}</li>
                   <li><span>商铺商标:</span>${screenbottomdata[i].trademarks}<em>标</em></li>
                   <li><span>商铺地区:</span>${screenbottomdata[i].area}</li>
@@ -72,7 +71,7 @@ var filterscreen = function () {
         if (filterdata[0][key] != "") {
             filterKey.push(key)
         }
-    } //通过双方的key值里的值是否想等作为判断
+    } //通过双方的key值里的值是否相等作为判断
     var newArray = screenbottomdata.filter(tem => {
         return filterKey.every(key => {
             return tem[key] == filterdata[0][key]
