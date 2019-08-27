@@ -1,4 +1,4 @@
-//渲染头部
+﻿//渲染头部
 var html = "";
 for (var i = 0; i < screentopdata.length; i++) {
     html += `
